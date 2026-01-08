@@ -12,6 +12,7 @@ public class L1P1E1 {
         int[] mass = new int[random.nextInt(10) + 5];
         int count = 0;
 
+        System.out.print("Massive: ");
         for(int i = 0; i < mass.length; i++){
             mass[i] = random.nextInt(50);
             System.out.print(mass[i] + " ");
@@ -19,6 +20,6 @@ public class L1P1E1 {
         }
 
         System.out.println();
-        System.out.println(count);
+        System.out.println("Count: " + count);
     }
 }
