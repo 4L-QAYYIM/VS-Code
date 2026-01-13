@@ -11,6 +11,7 @@
             <h2 id="input">Задача 1: Дан некоторый URL. Вывести имя домена.</h2>
             <textarea name="in1" cols="150" type="text" required></textarea>
         </div>
+        <h2 id="input">Задача 2: Выведите на экран следующую пирамидку.</h2>
         <br>
         <button type="submit" name="send">Отправить</button>
     </form>
