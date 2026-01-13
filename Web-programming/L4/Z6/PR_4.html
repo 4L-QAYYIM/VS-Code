@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <style>
+        img { 
+            width: 150px; 
+            height: 100px; 
+            display: block; 
+            margin-bottom: 10px; 
+            border: 2px solid #333;
+        }
+    </style>
+</head>
+<body>
+    <button id="slide-btn">Запустить слайд-шоу</button>
+    <div class="container">
+        <img src="i1.png" alt="Рис 1">
+        <img src="i2.png" alt="Рис 2">
+        <img src="i3.png" alt="Рис 3">
+        <img src="i4.png" alt="Рис 4">
+        <img src="i5.png" alt="Рис 5">
+        <img src="i6.png" alt="Рис 6">
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $("#slide-btn").click(function() {
+                $("img").each(function(index) {
+                    if (index % 2 !== 0) {
+                        $(this).slideUp("slow");
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

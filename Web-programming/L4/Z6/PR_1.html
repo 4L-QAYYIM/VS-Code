@@ -1,0 +1,29 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <meta charset="UTF-8">
+    <script src="http://code.jquery.com/jquery-latest.js"></script> 
+     
+    <script> 
+        $(document).ready(function () {
+            $("#hide-btn").click(function () {
+                $(".test:odd").hide(); 
+            }); 
+            $("#show-btn").click(function () { 
+                $(".test:odd").show(); 
+            }); 
+        }); 
+    </script> 
+</head> 
+<body> 
+    <button id="hide-btn">Скрыть четные</button>
+    <button id="show-btn">Показать четные</button>
+     
+    <h2 class="test">Заголовок 1</h2> 
+    <p class="test">Абзац 2</p> 
+    <h2 class="test">Заголовок 3</h2> 
+    <p class="test">Абзац 4</p> 
+    <h2 class="test">Заголовок 5</h2> 
+    <p class="test">Абзац 6</p> 
+</body> 
+</html>

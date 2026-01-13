@@ -1,0 +1,22 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <meta charset="UTF-8">
+    <script src="http://code.jquery.com/jquery-latest.js"></script> 
+     
+    <script> 
+        $(document).ready(function () {
+            $("input").keypress(function () {
+                var r = Math.floor(Math.random() * 255);
+                var g = Math.floor(Math.random() * 255);
+                var b = Math.floor(Math.random() * 255);
+                var randomColor = "rgb(" + r + "," + g + "," + b + ")";
+                $(this).css("background-color", randomColor);
+            });
+        }); 
+    </script> 
+</head> 
+<body>
+    <input>
+</body> 
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+    <button id="show">Показать случайный блок</button>
+    <button id="hide">Скрыть все блоки</button>
+    <div id="div1" style="display:none">Поле №1</div>
+    <div id="div2" style="display:none">Поле №2</div>
+    <div id="div3" style="display:none">Поле №3</div>
+    <div id="div4" style="display:none">Поле №4</div>
+    <div id="div5" style="display:none">Поле №5</div>
+
+    <script>
+        $(document).ready(function() {
+            $("#show").click(function() {
+                var randNum = Math.floor(Math.random() * 5) + 1;
+                var targetId = "#div" + randNum;
+                $("div" + targetId).fadeIn(3000);
+            });
+            $("#hide").click(function() {
+                $("div").hide();
+            });
+
+        });
+    </script>
+
+</body>
+</html>

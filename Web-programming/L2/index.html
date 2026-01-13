@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт студента: Закиров Альберт</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tasks.css"> 
+
+    <style>
+        .university-info {
+            border: 2px dashed var(--secondary-color);
+            transition: transform 0.3s ease;
+        }
+        
+        .university-info:hover {
+            transform: scale(1.01);
+        }
+
+        #tasks-section h2 {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .details ul li {
+            padding-left: 10px;
+            border-left: 3px solid var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header" style="border-bottom: 5px solid #007BFF; background-image: linear-gradient(to bottom, #2c2c2c, #1a1a1a);">
+        <h1>Сайт студента группы 3314</h1>
+        <p>Закиров Альберт Артурович</p>
+    </header>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#about">Обо мне</a></li>
+            <li><a href="#university">Мой ВУЗ</a></li>
+            <li><a href="#tasks-section">Задания</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        
+        <section class="student-info" id="about">
+            <div class="photo-container">
+                <img src="IMG_3973.PNG" alt="Фото студента Альберта Закирова" class="student-photo">
+            </div>
+            <div class="details">
+                <h2>Обо мне</h2>
+                <ul>
+                    <li>ФИО: Закиров Альберт Артурович</li>
+                    <li>Группа: 3314</li>
+                    <li>Будущая профессия: IT-специалист</li>
+                    <li>Почта: <a href="mailto:zakirovalbert2050@gmail.com" style="color: #ffc300; font-weight: bold;">zakirovalbert2050@gmail.com</a></li>
+                    <li>Увлечения: Баскетбол, Программирование, Английский язык</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="university-info" id="university">
+            <h2>Мой ВУЗ - НВГУ</h2>
+            <p style="font-style: italic; opacity: 0.9;">
+                Нижневартовский государственный университет (НВГУ) - один из ведущих вузов Ханты-Мансийского автономного округа – Югры. Он готовит высококвалифицированных специалистов в различных областях.
+            </p>
+            <p class="link-to-nvsu">
+                Официальный сайт: <a href="https://nvsu.ru" target="_blank">https://nvsu.ru</a>
+            </p>
+        </section>
+
+        <section class="tasks" id="tasks-section">
+            <h2>Выполненные задания</h2>
+
+            <div class="task-sections">
+                <div class="task-demo">
+                    <div class="grid-container">
+                        <div class="grid-item item-1">1</div>
+                        <div class="grid-item item-2">2</div>
+                        <div class="grid-item item-3">3</div>
+                        <div class="grid-item item-4">4</div>
+                        <div class="grid-item item-5">5</div>
+                        <div class="grid-item item-6">6</div>
+                        <div class="grid-item item-7">7</div>
+                        <div class="grid-item item-8">8</div>
+                        <div class="grid-item item-9">9</div>
+                        <div class="grid-item item-10">10</div>
+                        <div class="grid-item item-11">11</div>
+                    </div>
+                </div>
+
+                <div class="task-demo">
+                    <table class="styled-table">
+                        <tbody>
+                            <tr style="background-color: #007BFF; color: white;">
+                                <td colspan="8">6</td>
+                            </tr>
+                            <tr>
+                                <td class="accent-cell" rowspan="6">1</td>
+                                <td class="primary-cell" colspan="6">1</td>
+                                <td class="accent-cell" rowspan="6">1</td>
+                            </tr>
+                            <tr>
+                                <td class="accent-cell" rowspan="4">2</td>
+                                <td class="primary-cell" colspan="4">2</td>
+                                <td class="accent-cell" rowspan="4">2</td>
+                            </tr>
+                            <tr>
+                                <td class="accent-cell" rowspan="2">3</td>
+                                <td class="red-cell">3</td>
+                                <td class="blue-cell">3</td>
+                                <td class="accent-cell" rowspan="2">3</td>
+                            </tr>
+                            <tr>
+                                <td class="green-cell">4</td>
+                                <td class="yellow-cell">4</td>
+                            </tr>
+                            <tr>
+                                <td class="primary-cell" colspan="4">5</td>
+                            </tr>
+                            <tr>
+                                <td class="primary-cell" colspan="6">6</td>
+                            </tr>
+                            <tr style="background-color: #007BFF; color: white;">
+                                <td colspan="8">6</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="task-demo form-wrapper"> 
+                    <div class="form-container">
+                        <form>
+                            <div class="form-group">
+                                <label for="fio" class="input-label">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                                    ФИО
+                                </label>
+                                <input type="text" id="fio" class="text-input" value="" placeholder="Введите ФИО">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="date" class="input-label">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                                    Дата рождения
+                                </label>
+                                <div class="date-input-wrapper">
+                                    <input type="text" id="date" class="date-input" value="" placeholder="ДД.ММ.ГГГГ">
+                                    <span class="date-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="input-label">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg>
+                                    You like there?
+                                </label>
+                                <div class="radio-options">
+                                    <label class="radio-option">
+                                        <input type="radio" name="like" value="yes">
+                                        Да
+                                    </label>
+                                    <label class="radio-option">
+                                        <input type="radio" name="like" value="no">
+                                        Нет
+                                    </label>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="send-button">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Закиров А.А. Группа 3314.</p>
+    </footer>
+
+</body>
+</html>
